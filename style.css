@@ -1,4 +1,13 @@
+
+:root{
+    --link:black;
+}
+
 .link1{
     text-align: center;
-    color:black;
+    font-size: 29px;
+}
+a{
+    color:var(--link);
+    text-decoration: none;
 }
