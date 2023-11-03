@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
-:root{
-    --link:black;
+:root {
+    --link: rgb(255, 0, 0);
+    --bg-color: rgb(0, 0, 0);
+    --list-color: rgb(0, 224, 0);
 }
 
-.link1{
-    text-align: center;
-    font-size: 29px;
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    background: var(--bg-color);
 }
-a{
-    color:var(--link);
+
+.links {
+    /* this is for the center align, but it can't handle more elements */
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color:var(--list-color);
+}
+
+a {
+    color: var(--link);
     text-decoration: none;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie search</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>movie <span>viewer</span></p>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-element">
+                <h3>search movie</h3>
+                <input type="text" class="form-control" placeholder="search movie title here..." id="movie-search-box" onkeyup="findMovies()">
+                <div class="search-list" id="search-list">
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="./movie-pics/221109-Leo Vijay Sanjay Dutt Poster.jpg" alt="movie banner">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>leo</h3>
+                            <p>2023</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <div class="movie-poster">
+                        <img src="./movie-pics/221109-Leo Vijay Sanjay Dutt Poster.jpg" alt="movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">leo</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">year : 2023</li>
+                            <li class="rated">ratings : PG-13</li>
+                            <li class="released">released : 19 october 2023</li>
+                        </ul>
+                        <p class="genre"><strong>genre :</strong>action,triller,adventure,gangster</p>
+                        <p class="writer"><strong>writer :</strong>Lokesh Kanagaraj, Rathna Kumar, Deeraj Vaidy</p>
+                        <p class="genre"><strong>actors :</strong>Joseph Vijay as Leo Das / Parthiban , Sanjay Dutt as Antony Das , Trisha Krishnan as Sathya , Arjun Sarja as Harold Das , Gautham Vasudev Menon as Mysskin</p>
+                        <p class="plot"><strong>plot :</strong>The plot of the 2023 Tamil film Leo is as follows: <br>
+
+                            Parthiban (Vijay), a café owner in Himachal Pradesh, is living a peaceful life with his wife and two children. One day, he saves the townsfolk from a spotted hyena, gaining national attention. However, this also attracts the attention of ruthless criminals who believe that he is Leo Das, the son of a notorious gangster. <br>
+                            
+                            Leo Das was presumed dead in a fire accident, but his father, Anthony Das (Sanjay Dutt), and uncle, Harold Das (Arjun), are convinced that Parthiban is Leo. They are determined to uncover the truth and bring Leo back home, even if it means killing him. <br>
+                            
+                            Parthiban denies being Leo Das, but he is forced to confront his past when the criminals start targeting his family. He must now protect his loved ones and clear his name, while also facing the challenges of his ordinary life. <br>
+                            
+                            The film is a mystery thriller with elements of action and drama. It is directed by Lokesh Kanagaraj, who is known for his stylish and suspenseful films. Leo is one of the most anticipated Tamil films of 2023, and it is expected to be a major box office success.
+                        </p>
+                        <p class="language"><strong>language :</strong>Tamil, Telugu, Kannada, Malayalam, Hindi.</p>
+                        <p class="awards"><strong><i class="fa-solid fa-award fa-beat-fade";"></i></strong> new release</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
