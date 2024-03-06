@@ -1,0 +1,99 @@
+/* Mystery Quest, cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+/* "Roboto Mono", monospace */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* 'Roboto Condensed', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root {
+    --bg-color: rgb(118, 85, 210);
+    --text-color: rgb(13, 255, 0);
+    --screen-bg-color: rgb(5, 5, 5);
+    --control-bg-color: rgb(63, 63, 63);
+    --control-color: rgb(255, 255, 255);
+    --play-btn-color: rgb(17, 255, 0);
+    --pause-btn-color: rgb(255, 213, 0);
+    --stop-btn-color: rgb(255, 0, 0);
+    --time-stamp-color: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mystery Quest', cursive;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.screen {
+    cursor: pointer;
+    width: 50%;
+    background-color: var(--screen-bg-color) !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls {
+    background: var(--control-bg-color);
+    color: var(--control-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    /* text-align: center; */
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .fa-play {
+    color: var(--play-btn-color);
+}
+
+.controls .fa-pause {
+    color: var(--pause-btn-color);
+}
+
+.controls .fa-stop {
+    color: var(--stop-btn-color);
+}
+
+.controls .timestamp {
+    color: var(--time-stamp-color);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.btn.focus {
+    outline: 0;
+}
+
+@media(max-width: 800px) {
+
+    .screen,
+    .controls {
+        width: 90%;
+    }
+}
