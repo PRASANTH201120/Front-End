@@ -1,15 +1,15 @@
-:root{
-    --primary-colorL:rgb(5, 185, 83);
-    --bg-color:rgb(172, 172, 172);
-    --btn-color:rgb(255, 255, 255);
-    --cur-select-border-color:rgb(0, 0, 0);
+:root {
+    --primary-colorL: rgb(19, 188, 33);
+    --bg-color: rgb(255, 255, 255);
+    --btn-color: rgb(255, 255, 255);
+    --cur-select-border-color: rgb(0, 0, 0);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
@@ -20,16 +20,21 @@ body{
     padding: 20px;
 }
 
-h1{
+h1 {
     color: var(--primary-colorL);
 }
 
-p{
+p {
     text-align: center;
 }
 
-.btn{
-    color:var(--btn-color);
+img {
+    background: rgb(157, 83, 83);
+    background-color: aqua;
+}
+
+.btn {
+    color: var(--btn-color);
     background-color: var(--primary-colorL);
     cursor: pointer;
     border-radius: 5px;
@@ -37,21 +42,61 @@ p{
     padding: 5px 12px;
 }
 
-.money-img{
+.money-img {
     width: 150px;
 }
 
-.currency{
-    padding:40px 0;
+.currency {
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.currency select{
+.currency select {
     padding: 10px 20px 10px 20px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--cur-select-border-color);
+    font-size: 16px;
+    background: transparent;
+    border-radius: 5px;
+
+    /* for down icon */
+    background-image: url(./img/arrow_drop_down_FILL0_wght400_GRAD0_opsz24.svg);
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 20px auto, 100%;
+    background-repeat: no-repeat;
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-colorL);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media(max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
 }
