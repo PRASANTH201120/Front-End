@@ -1,0 +1,57 @@
+:root{
+    --primary-colorL:rgb(5, 185, 83);
+    --bg-color:rgb(172, 172, 172);
+    --btn-color:rgb(255, 255, 255);
+    --cur-select-border-color:rgb(0, 0, 0);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: var(--primary-colorL);
+}
+
+p{
+    text-align: center;
+}
+
+.btn{
+    color:var(--btn-color);
+    background-color: var(--primary-colorL);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.money-img{
+    width: 150px;
+}
+
+.currency{
+    padding:40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select{
+    padding: 10px 20px 10px 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--cur-select-border-color);
+}
