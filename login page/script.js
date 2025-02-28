@@ -46,7 +46,7 @@ function checkEmail(input) {
 //     if (email.value === ''){
 //         showError(email,'email is required');
 //     }else if(!validateEmail(email.value)) {
-//         showError(email,'email is not valid');        
+//         showError(email,'email is not valid');
 //     }else {
 //         showSuccess(email);
 //     }
@@ -63,7 +63,7 @@ function checkEmail(input) {
 //         showSuccess(password2);
 //     }
 // });
- 
+
 // method 2
 //check required
 function checkRequired(inputArr){

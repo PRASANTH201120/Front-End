@@ -97,3 +97,16 @@ h1 {
         width: 90%;
     }
 }
+
+@media(max-width: 400px) {
+
+
+    h1 {
+        color: black;
+        font-size:1pc;
+    }
+    .screen,
+    .controls {
+        background-color: var(--screen-bg-color);
+    }
+}
