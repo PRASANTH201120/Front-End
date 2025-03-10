@@ -55,7 +55,7 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
             } else {
                 weatherCardsDiv.insertAdjacentHTML("beforeend", html);
             }
-        });        
+        });
     }).catch(() => {
         alert("An error occurred while fetching the weather forecast!");
     });
