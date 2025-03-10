@@ -1,5 +1,3 @@
-http://localhost:5174/
-
 
 
 # React + Vite
